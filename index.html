@@ -146,8 +146,27 @@
 <a href="Games.html">
 <img src="games.png" alt="games" class="Games">
 </a>
-    <button onclick="openGame()"> about:blank cloak</button>
+<style>
+        .dark-button {
+            position: absolute;
+            background-color: #333; /* Dark gray background */
+            color: #fff;           /* White text */
+            border: none;          /* No border */
+            padding: 10px 20px;    /* Padding for size */
+            font-size: 16px;       /* Text size */
+            border-radius: 5px;    /* Rounded corners */
+            cursor: pointer;       /* Pointer cursor on hover */
+            transition: background-color 0.3s ease; /* Smooth hover effect */
+        }
+
+        .dark-button:hover {
+            background-color: #555; /* Lighter gray on hover */
+        }
+    </style>
+</head>
 <body>
+    <button class="dark-button"  style="top: 20%; left: 30%;"  onclick="openGame()">Cloak</button>
+</body>
      <div class="iframe-wrapper">
         <iframe src="https://schoolmxth.vr.lt/"> 
 
