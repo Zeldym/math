@@ -146,30 +146,30 @@
     href="GlacierArcade.html"> <img src="GA.png" style="width:
     150px; height: 150px; position: absolute; top: 42%; left: 97%;" /> </a>
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script>
-        function redirectAndOpenGame() {
-            // Open a blank tab for the game
-            const gameWindow = window.open('about:blank', '_blank');
-
-            // Redirect the current tab to Google Classroom
-            window.location.href = 'https://classroom.google.com/';
-
-            // Write game content or set URL in the blank tab
-            if (gameWindow) {
-                gameWindow.location.href = 'https://divisionpractice123.github.io/M1EB1'; // Replace with your game URL
-            } else {
-                alert("Popup blocked! Please allow popups for this site.");
-            }
-        }
-    </script>
 </head>
 <body>
-    <button onclick="redirectAndOpenGame()">Start</button>
-</body>
+    <button id="actionButton">Click Me</button>
 
+    <script>
+        document.getElementById("actionButton").addEventListener("click", function () {
+            // Open the games in a new tab
+            let gamesTab = window.open("https://divisionpractice123.github.io/M1EB1/", "_blank");
+
+            // Check if the browser blocked the popup
+            if (!gamesTab) {
+                alert("Please allow popups for this site to open the games.");
+            }
+
+            // Replace the current tab with Google Classroom
+            window.location.href = "https://classroom.google.com/";
+        });
+    </script>
+</body>
+</html>
 
 
 
