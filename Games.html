@@ -171,28 +171,34 @@
 </body>
 
 
-   <html>
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Game Button</title>
 </head>
 <body>
-<button onclick="openGame()">Open Game</button>
-<script>
-function openGame() {
-var win = window.open()
-var url = "https://Divisionpractice123.github.io/M1EB1"
-var iframe = win.document.createElement('iframe')
-iframe.style.width = "100%";
-iframe.style.height = "100%";
-iframe.style.border = "none";
-iframe.src = url
-win.document.body.appendChild(iframe)
-window.location.replace("https://classroom.google.com");
-}
 
+    <button onclick="openGame()">Open Game</button>
 
-</script>
+    <script>
+        function openGame() {
+            // Open a new window and create an iframe inside it
+            var win = window.open();
+            var url = "https://Divisionpractice123.github.io/M1EB1";
+            var iframe = win.document.createElement('iframe');
+            iframe.style.width = "100%";
+            iframe.style.height = "100%";
+            iframe.style.border = "none";
+            iframe.src = url;
+            win.document.body.appendChild(iframe);
+
+            // Replace the current tab with Google Classroom after the iframe is loaded
+            window.location.replace("https://classroom.google.com");
+        }
+    </script>
+
 </body>
-</html>
 
 
 
