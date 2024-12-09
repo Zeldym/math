@@ -69,8 +69,13 @@
             top: 10px;
           
         }
+        .Forms{
+          position: fixed;
+            right: 100px;
+            top: 10px;   }
+            
 
-        .Proxy img, .Games img, .Home img {
+        .Proxy img, .Games img, .Home img, .Forms img {
             display: block;
             width: 100%; /* Ensure the image fits within the container */
             filter: brightness(1); /* Initial brightness */
@@ -79,9 +84,9 @@
               border-radius: 10px; /* Curved edges for the image itself */
         }
 
-       .Proxy:hover img, .Games:hover img, .Home:hover img {
+       .Proxy:hover img, .Games:hover img, .Home:hover img, .Forms:hover img {
             filter: brightness(1.2); /* Brighter on hover */
-            box-shadow: 0 0 6px 1px gray; /* Gray outline on hover */
+            box-shadow: 0 0 10px 6px gray; /* Gray outline on hover */
         }
         .iframe-wrapper {
             position: absolute;
@@ -182,7 +187,10 @@
 <div class="Games">
 <a href="Games.html">
 <img src="games.png" alt="Image" style="width: 100px;"></a></div>
-</a>
+<div class="Forms">
+<a href="Forms.html">
+<img src="Forms.png" alt="Image" style="width: 100px;"></a></div>
+
 <style>
         .dark-button {
             position: absolute;
