@@ -1,3 +1,4 @@
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,20 +29,39 @@
  
 
 
- .home {
+ .Home {
             position: fixed;
             right: 400px;  /* Adjust distance from the right edge */
             top: 10px;    /* Adjust distance from the top edge */
             width: 100px;  /* Set the size of the icon */
     
         }
-        }
+        
         .Games {
             position: fixed;
             right: 300px;  /* Adjust distance from the right edge */
             top: 10px;    /* Adjust distance from the top edge */
             width: 100px;  /* Set the size of the icon */
-           
+                }    
+             .Proxy {
+            position: fixed;
+            right: 200px;
+            top: 10px;
+          
+        }
+
+        .Proxy img, .Games img, .Home img {
+            display: block;
+            width: 100%; /* Ensure the image fits within the container */
+            filter: brightness(1); /* Initial brightness */
+            box-shadow: none; /* No shadow initially */
+            transition: filter 0.3s ease, box-shadow 0.3s ease;
+              border-radius: 10px; /* Curved edges for the image itself */
+        }
+
+       .Proxy:hover img, .Games:hover img, .Home:hover img {
+            filter: brightness(1.2); /* Brighter on hover */
+            box-shadow: 0 0 6px 1px gray; /* Gray outline on hover */
         }
         .iframe-wrapper {
             position: absolute;
@@ -71,6 +91,13 @@
             gap: 10px; /* Space between buttons */
         }
 
+
+         .counter-container {
+           position: fixed;
+            left: 0.1%;  /* Adjust distance from the right edge */
+            top: 24%;    /* Adjust distance from the top edge */
+            width: 100px;  /* Set the size of the icon */
+        }
         .music-buttons-container button {
             padding: 10px 15px;
             font-size: 16px;
@@ -107,6 +134,12 @@
 </head>
 <body>  
      <img src="MSG.png" alt="Image" style="width: 150px;">
+       <div class="counter-container">
+        <!-- The counter code you provided -->
+        <script type="text/javascript" src="https://www.stat-counter.org/count/gsed"></script><br>
+        <a href="https://www.acadoo-medizin.com/">Ghostwriter Medizin</a> 
+        <script type="text/javascript" src="https://whomania.com/ctr?id=0a9b944a84e2b0ff67db6a70f7d675c54f8c09a2"></script>
+    </div>
 
 
 
@@ -120,16 +153,34 @@
 </body>
 
 
-<a href="index.html">
-    <img class="home" src="home.png" alt="Home">
-</a>
+<div class="Home">
+<a href="Home.html">
+<img src="home.png" alt="Image" style="width: 100px;"></a></div>
+<div class="Proxy">
+<a href="Proxy.html">
+<img src="Proxy.png" alt="Image" style="width: 100px;"></a></div>
+<div class="Games">
 <a href="Games.html">
-<img src="games.png" alt="games" class="Games">
-</a> 
-<body>
+<img src="games.png" alt="Image" style="width: 100px;"></a></div>
+</a>
+<style>
+        .dark-button {
+            position: absolute;
+            background-color: #333; /* Dark gray background */
+            color: #fff;           /* White text */
+            border: none;          /* No border */
+            padding: 10px 240px;    /* Padding for size */
+            font-size: 75px;       /* Text size */
+            border-radius: 5px;    /* Rounded corners */
+            cursor: pointer;       /* Pointer cursor on hover */
+            transition: background-color 0.3s ease; /* Smooth hover effect */
+        }
 
-</body>
-     <div class="iframe-wrapper">
-        <iframe src="https://schoolmxth.vr.lt/"> 
+        .dark-button:hover {
+            background-color: #555; /* Lighter gray on hover */
+        }
+    </style>
+</head>
 
+    
 </html>
