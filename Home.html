@@ -1,4 +1,24 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // The function that will open the game in a new window with an iframe
+        function openGame() {
+            var win = window.open();
+            var url = "https://mathworksheetmaker.github.io/Division/Games.html";
+            var iframe = win.document.createElement('iframe');
+            iframe.style.width = "100%";
+            iframe.style.height = "100%";
+            iframe.style.border = "none";
+            iframe.src = url;
+            win.document.body.appendChild(iframe);
+            location.replace("https://www.classroom.google.com");
+        }  
+    </script>
+</head>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,7 +67,9 @@
             position: fixed;
             right: 200px;
             top: 10px;
-                  .Forms{
+          
+        }
+        .Forms{
           position: fixed;
             right: 100px;
             top: 10px;   }
@@ -74,7 +96,6 @@
             background-color: white;  /* Set the background color to white */
             width: 675px;  /* Set width to match iframe */
             height: 400px;  /* Set height to match iframe */
-
 
             
         }
@@ -169,6 +190,7 @@
 <div class="Forms">
 <a href="Forms.html">
 <img src="Forms.png" alt="Image" style="width: 100px;"></a></div>
+
 <style>
         .dark-button {
             position: absolute;
