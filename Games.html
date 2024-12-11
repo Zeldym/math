@@ -1,3 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // The function that will open the game in a new window with an iframe
+        function openGame() {
+            var win = window.open();
+            var url = "https://mathworksheetmaker.github.io/Division/Games.html";
+            var iframe = win.document.createElement('iframe');
+            iframe.style.width = "100%";
+            iframe.style.height = "100%";
+            iframe.style.border = "none";
+            iframe.src = url;
+            win.document.body.appendChild(iframe);
+            location.replace("https://www.classroom.google.com");
+        }  
+    </script>
+</head>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,12 +65,17 @@
                 }    
              .Proxy {
             position: fixed;
-            right: 200px;
+            right: 245px;
             top: 10px;
           
         }
+        .Forms{
+          position: fixed;
+            right: 145px;
+            top: 10px;   }
+            
 
-        .Proxy img, .Games img, .Home img {
+        .Proxy img, .Games img, .Home img, .Forms img {
             display: block;
             width: 100%; /* Ensure the image fits within the container */
             filter: brightness(1); /* Initial brightness */
@@ -58,10 +84,28 @@
               border-radius: 10px; /* Curved edges for the image itself */
         }
 
-       .Proxy:hover img, .Games:hover img, .Home:hover img {
+       .Proxy:hover img, .Games:hover img, .Home:hover img, .Forms:hover img {
             filter: brightness(1.2); /* Brighter on hover */
-            box-shadow: 0 0 6px 1px gray; /* Gray outline on hover */
+            box-shadow: 0 0 10px 6px gray; /* Gray outline on hover */
         }
+        .iframe-wrapper {
+            position: absolute;
+            top: 52%;  /* Position iframe 61% from the top */
+            left: 50%;  /* Position iframe horizontally centered */
+            transform: translate(-50%, -50%);  /* Adjust to center exactly */
+            background-color: white;  /* Set the background color to white */
+            width: 675px;  /* Set width to match iframe */
+            height: 400px;  /* Set height to match iframe */
+
+            
+        }
+
+         iframe {
+            width: 100%;  /* Make iframe fill the entire parent div */
+            height: 100%;  /* Make iframe fill the entire parent div */
+            border: none;  /* Remove default iframe border */
+        }
+
 
           .music-buttons-container {
             position: fixed;
@@ -73,7 +117,7 @@
         }
 
 
-        }
+   
         .music-buttons-container button {
             padding: 10px 15px;
             font-size: 16px;
@@ -112,6 +156,8 @@
      <img src="MSG.png" alt="Image" style="width: 150px;">
 
 
+
+
     <div>
         <h1 style="font-size:6vw; white-space: nowrap;">Mally's Gaming</h1>
 
@@ -124,31 +170,17 @@
 
 <div class="Home">
 <a href="Home.html">
-<img src="home.png" alt="Image" style="width: 100px;"></a></div>
+<img src="home.png" alt="Image" style="width: 90px;"></a></div>
 <div class="Proxy">
 <a href="Proxy.html">
 <img src="Proxy.png" alt="Image" style="width: 75px;"></a></div>
 <div class="Games">
 <a href="Games.html">
-<img src="Wgames.png" alt="Image" style="width: 100px;"></a></div>
-<style>
-        .dark-button {
-            position: absolute;
-            background-color: #333; /* Dark gray background */
-            color: #fff;           /* White text */
-            border: none;          /* No border */
-            padding: 10px 240px;    /* Padding for size */
-            font-size: 75px;       /* Text size */
-            border-radius: 5px;    /* Rounded corners */
-            cursor: pointer;       /* Pointer cursor on hover */
-            transition: background-color 0.3s ease; /* Smooth hover effect */
-        }
+<img src="Games.png" alt="Image" style="width: 91px;"></a></div>
+<div class="Forms">
+<a href="HallofFame.html">
+<img src="HOF.png" alt="Image" style="width: 100px;"></a></div>
 
-        .dark-button:hover {
-            background-color: #555; /* Lighter gray on hover */
-        }
-    </style>
-</head>
 
 
 
