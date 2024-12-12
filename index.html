@@ -88,13 +88,31 @@
             filter: brightness(1.2); /* Brighter on hover */
             box-shadow: 0 0 10px 6px gray; /* Gray outline on hover */
         }
+
+                    .iframe-wrapper {
+            position: absolute;
+            top: 52%;  /* Position iframe 61% from the top */
+            left: 50%;  /* Position iframe horizontally centered */
+            transform: translate(-50%, -50%);  /* Adjust to center exactly */
+            background-color: white;  /* Set the background color to white */
+            width: 675px;  /* Set width to match iframe */
+            height: 400px;  /* Set height to match iframe */
+
+            
+        }
+
+         iframe {
+            width: 100%;  /* Make iframe fill the entire parent div */
+            height: 100%;  /* Make iframe fill the entire parent div */
+            border: none;  /* Remove default iframe border */
+        }
     
 
    
 
 
           .music-buttons-container {
-            position: fixed;
+            position: absolute;
             top: 2%; /* 10% from the top */
             left: 54%; /* 5% from the left */
             display: flex;
@@ -104,7 +122,7 @@
 
 
          .counter-container {
-           position: fixed;
+           position: absolute;
             left: 0.1%;  /* Adjust distance from the right edge */
             top: 24%;    /* Adjust distance from the top edge */
             width: 100px;  /* Set the size of the icon */
