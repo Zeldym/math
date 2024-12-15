@@ -35,14 +35,14 @@
 
         body {
             font-family: Arial, sans-serif;
-            background: url('Backround.gif') no-repeat center center fixed; /* Full-screen galaxy background */
-            background-size: cover; /* Ensure the background covers the entire viewport */
+            background: url('Backround.gif') no-repeat center center fixed; 
+            background-size: cover; 
             color: white;
             text-align: center;
             display: flex;
-            justify-content: center; /* Align text to the top */
-            align-items: flex-start; /* Align text to the top */
-            height: 100vh; /* Full height of the viewport */
+            justify-content: center; 
+            align-items: flex-start;
+            height: 100vh; 
             padding-right: 48%;
         }
 
@@ -50,27 +50,27 @@
 
 
  .Home {
-    position: absolute;  /* Change from fixed to absolute */
+    position: absolute;  
     right: 400px;  
     top: 10px;    
     width: 100px;  
 }
 
 .Games {
-    position: absolute;  /* Change from fixed to absolute */
+    position: absolute; 
     right: 300px;  
     top: 10px;    
     width: 100px;  
 }
 
 .Proxy {
-    position: absolute;  /* Change from fixed to absolute */
+    position: absolute;
     right: 245px;
     top: 10px;
 }
 
 .Forms {
-    position: absolute;  /* Change from fixed to absolute */
+    position: absolute;  
     right: 145px;
     top: 10px;   
 }
@@ -79,51 +79,50 @@
 
         .LOL img, .Bl img, .Nitro img, .Schol img, .SM64 img, .Duck img, .Oop img, .poop img, .R img, .un img, .DC img, .Rob img, .FN img, .Fo img, .Op img, .B1 img, .R img, .Di img, .Mex img, .Hub img, .G img, .H img, .Mo img, .Y img, .G img, .A img, .Mi img, .M img, .D img, .Proxy img, .Games img, .Home img, .Forms img {
             display: block;
-            width: 100%; /* Ensure the image fits within the container */
-            filter: brightness(1); /* Initial brightness */
-            box-shadow: none; /* No shadow initially */
+            width: 100%; 
+            filter: brightness(1); 
+            box-shadow: none; 
             transition: filter 0.3s ease, box-shadow 0.3s ease;
-              border-radius: 10px; /* Curved edges for the image itself */
+              border-radius: 10px;
         }
 
        .LOL:hover img, .Nitro:hover img, .Schol:hover img, .SM64:hover img, .Duck:hover img, .Oop:hover img, .poop:hover img, .R:hover img, .un:hover img, .DC:hover img, .Rob:hover img, .FN:hover img, .Fo:hover img, .Op:hover img, .Bl:hover img, .Di:hover img, .Mex:hover img, .Hub:hover img, .G:hover img, .H:hover img, .Mo:hover img, .Y:hover img, .G:hover img, .A:hover img, .Mi:hover img, .M:hover img, .D:hover img, .R:hover img, .Proxy:hover img, .Games:hover img, .Home:hover img, .Forms:hover img {
-            filter: brightness(1.2); /* Brighter on hover */
-            box-shadow: 0 0 10px 6px gray; /* Gr outline on hover */
+            filter: brightness(1.2); 
+            box-shadow: 0 0 10px 6px gray; 
         }
         .iframe-wrapper {
             position: absolute;
-            top: 52%;  /* Position iframe 61% from the top */
-            left: 50%;  /* Position iframe horizontally centered */
-            transform: translate(-50%, -50%);  /* Adjust to center exactly */
-            background-color: white;  /* Set the background color to white */
-            width: 675px;  /* Set width to match iframe */
-            height: 400px;  /* Set height to match iframe */
+            top: 52%;  
+            left: 50%; 
+            transform: translate(-50%, -50%);  
+            background-color: white;  
+            width: 675px; 
+            height: 400px;  
 
             
         }
 
          iframe {
-            width: 100%;  /* Make iframe fill the entire parent div */
-            height: 100%;  /* Make iframe fill the entire parent div */
-            border: none;  /* Remove default iframe border */
+            width: 100%;  
+            height: 100%;  
+            border: none;  
         }
 
 
           .music-buttons-container {
             position: absolute;
-            top: 2%; /* 10% from the top */
-            left: 54%; /* 5% from the left */
+            top: 2%; 
+            left: 54%; 
             display: flex;
-            flex-direction: column; /* Stack buttons vertically */
-            gap: 10px; /* Space between buttons */
-        }
+            flex-direction: column; 
+            gap: 10px; 
 
 
    
         .music-buttons-container button {
             padding: 10px 15px;
             font-size: 16px;
-            background-color: #333; /* Dark background for buttons */
+            background-color: #333;
             color: white;
             border: 1px solid #555;
             border-radius: 5px;
@@ -131,18 +130,18 @@
         }
 
         .music-buttons-container button:hover {
-            background-color: #555; /* Slightly lighter color on hover */
+            background-color: #555; 
         }
     </style>
 </head>
 <body>
-    <!-- Music Buttons -->
+
     <div class="music-buttons-container">
         <button onclick="document.getElementById('background-music').play()">Play Music</button>
         <button onclick="document.getElementById('background-music').pause()">Pause Music</button>
     </div>
 
-    <!-- Audio Player -->
+
     <audio id="background-music" loop>
         <source src="CS.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
