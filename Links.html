@@ -1,0 +1,193 @@
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mally's Sus gaming</title>
+    <style>
+        * {
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+        html, body {
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: url('Backround.gif') no-repeat center center fixed; /* Full-screen galaxy background */
+            background-size: cover; /* Ensure the background covers the entire viewport */
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center; /* Align text to the top */
+            align-items: flex-start; /* Align text to the top */
+            height: 100vh; /* Full height of the viewport */
+            padding-right: 48%;
+        }
+
+ 
+
+
+ .Home {
+            position: fixed;
+            right: 400px;  /* Adjust distance from the right edge */
+            top: 10px;    /* Adjust distance from the top edge */
+            width: 100px;  /* Set the size of the icon */
+    
+        }
+        
+        .Games {
+            position: fixed;
+            right: 300px;  /* Adjust distance from the right edge */
+            top: 10px;    /* Adjust distance from the top edge */
+            width: 100px;  /* Set the size of the icon */
+                }    
+             .Proxy {
+            position: fixed;
+            right: 245px;
+            top: 10px;
+          
+        }
+        .Forms{
+          position: fixed;
+            right: 145px;
+            top: 10px;   }
+                 .Links {
+            position: fixed;
+            right: 45px;
+            top: 10px;
+          
+        }
+            
+
+        .Proxy img, .Games img, .Home img, .Forms img {
+            display: block;
+            width: 100%; /* Ensure the image fits within the container */
+            filter: brightness(1); /* Initial brightness */
+            box-shadow: none; /* No shadow initially */
+            transition: filter 0.3s ease, box-shadow 0.3s ease;
+              border-radius: 10px; /* Curved edges for the image itself */
+        }
+
+       .Proxy:hover img, .Games:hover img, .Home:hover img, .Forms:hover img {
+            filter: brightness(1.2); /* Brighter on hover */
+            box-shadow: 0 0 10px 6px gray; /* Gray outline on hover */
+        }
+
+
+
+          .music-buttons-container {
+            position: fixed;
+            top: 2%; /* 10% from the top */
+            left: 54%; /* 5% from the left */
+            display: flex;
+            flex-direction: column; /* Stack buttons vertically */
+            gap: 10px; /* Space between buttons */
+        }
+
+
+        .music-buttons-container button {
+            padding: 10px 15px;
+            font-size: 16px;
+            background-color: #333; /* Dark background for buttons */
+            color: white;
+            border: 1px solid #555;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .music-buttons-container button:hover {
+            background-color: #555; /* Slightly lighter color on hover */
+        }
+
+
+          
+    </style>
+</head>
+<body>
+    <!-- Music Buttons -->
+    <div class="music-buttons-container">
+        <button onclick="document.getElementById('background-music').play()">Play Music</button>
+        <button onclick="document.getElementById('background-music').pause()">Pause Music</button>
+    </div>
+
+    <!-- Audio Player -->
+    <audio id="background-music" loop>
+        <source src="CS.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</body>
+      
+
+
+
+    </style>
+</head>
+<body>  
+     <img src="MSG.png" alt="Image" style="width: 150px;">
+
+
+
+
+    <div>
+        <h1 style="font-size:6vw; white-space: nowrap;">Mally's Gaming</h1>
+
+    
+
+        <h2>Have fun,be cool, and spread the word</h2>
+    </div>
+</body>
+
+
+<div class="Home">
+<a href="Home.html">
+<img src="home.png" alt="Image" style="width: 90px;"></a></div>
+<div class="Proxy">
+<a href="Proxy.html">
+<img src="Proxy.png" alt="Image" style="width: 75px;"></a></div>
+<div class="Games">
+<a href="Games.html">
+<img src="Games.png" alt="Image" style="width: 91px;"></a></div>
+<div class="Forms">
+<a href="HallofFame.html">
+<img src="WHOF.png" alt="Image" style="width: 100px;"></a></div>
+        <div class="Links">
+<a href="Links.html">
+<img src="WLinks.png" alt="Image" style="width: 100px;"></a></div>
+</head>
+<body>
+<h2 style="
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        transform: translateY(-50%);
+        margin: 0;
+        font-size: 3vw;
+        white-space: nowrap;
+        font-family: Arial, sans-serif;
+        text-align: left;
+    ">  
+    Links:
+</h2>
+<h2 style="
+        position: absolute;
+        top: 37%;
+        left: 10%;
+        transform: translateY(-50%);
+        margin: 0;
+        font-size: 2vw;
+        white-space: nowrap;
+        font-family: Arial, sans-serif;
+        text-align: left;
+    ">  <ul>
+   <il> Link 1: <a href="https://biologyhelp.github.io/Ocean/">https://biologyhelp.github.io/Ocean/</a></il> </ul>
+</h2>
+</html>
