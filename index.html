@@ -4,18 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <script>
-
-        function ProxyOpen() {
-            var win = window.open();
-            var iframe = win.document.createElement('iframe');
-            iframe.style.width = "100%";
-            iframe.style.height = "100%";
-            iframe.style.border = "none";
-            iframe.src = Inp;
-            win.document.body.appendChild(iframe);
-        }  
-    </script>
 
     <script>
 
@@ -300,25 +288,21 @@
         <ul>
        <li>OK GUYS STOP SPAMMING THE FORMS!😠</li></h3>
 </ul>
-  
+
+
 <head>
   <meta charset="UTF-8">
-  <title>Set URL Variable</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    .ProxyBar1 {
-    position: absolute;
-        top: 71%;
-        left: 37%;
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-    .container {
+    .Rizz {
       text-align: center;
     }
+
+    .container {
+      text-align: center;
+      margin-top: 50px;
+    }
+
     input[type="text"] {
       padding: 10px;
       width: 300px;
@@ -328,6 +312,7 @@
       color: white;
       outline: none;
     }
+
     button {
       padding: 10px 20px;
       margin-top: 10px;
@@ -338,33 +323,48 @@
       cursor: pointer;
       font-size: 16px;
     }
+
     button:hover {
       background-color: #444;
     }
   </style>
+  <script>
+    let Inp; 
+    function SetInp() {
+      Inp = document.getElementById('urlInput').value; 
+      console.log('Inp set to:', Inp);
+    }
+
+    function ProxyOpen() {
+      if (!Inp) {
+        alert("Please enter a URL before proceeding.");
+        return;
+      }
+      var win = window.open();
+      var iframe = win.document.createElement('iframe');
+      iframe.style.width = "100%";
+      iframe.style.height = "100%";
+      iframe.style.border = "none";
+      iframe.src = Inp; 
+      win.document.body.appendChild(iframe);
+    }
+
+    function Connecter() {
+      SetInp(); 
+      ProxyOpen();
+    }
+  </script>
 </head>
-<div class="ProxyBar1">
+
+<div class="Rizz">
   <div class="container">
+
     <input type="text" id="urlInput" placeholder="Enter a URL">
     <br>
     <button onclick="Connecter()">Open</button>
   </div>
-    <script>
-        let Inp;
-        function SetInp() {
-         Inp = document.getElementById('urlInput').value;
-      console.log('Inp set to:', Inp); 
-  let Inp;
-        }
-
-        
-        function Connecter() {
-            ProxyOpen();
-            SetInp(); }
-
-        
-    </script>
 </div>
 
+</html>
 
 </html>
