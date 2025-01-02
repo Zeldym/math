@@ -349,10 +349,22 @@
   <div class="container">
     <input type="text" id="urlInput" placeholder="Enter a URL">
     <br>
-    <button onclick="ProxyOpen()">Set URL</button>
-    Inp = document.getElementById('urlInput').value; // Get input value
-    
+    <button onclick="Connecter()">Open</button>
   </div>
+    <script>
+        let Inp;
+        function SetInp() {
+         Inp = document.getElementById('InpInput').value;
+      console.log('Inp set to:', Inp); 
+        }
+
+        
+        function Connecter() {
+            ProxyBar();
+            SetInp(); }
+
+        
+    </script>
 </div>
 
 
