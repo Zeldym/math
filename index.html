@@ -4,6 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script>
+
+        function ProxyOpen() {
+            var win = window.open();
+            var iframe = win.document.createElement('iframe');
+            iframe.style.width = "100%";
+            iframe.style.height = "100%";
+            iframe.style.border = "none";
+            iframe.src = Inp;
+            win.document.body.appendChild(iframe);
+        }  
+    </script>
+
     <script>
 
         function openGame() {
