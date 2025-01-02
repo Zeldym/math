@@ -287,4 +287,64 @@
         <ul>
        <li>OK GUYS STOP SPAMMING THE FORMS!😠</li></h3>
 </ul>
+  
+<head>
+  <meta charset="UTF-8">
+  <title>Set URL Variable</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      text-align: center;
+    }
+    input[type="text"] {
+      padding: 10px;
+      width: 300px;
+      border: none;
+      border-radius: 5px;
+      background-color: #1e1e1e;
+      color: white;
+      outline: none;
+    }
+    button {
+      padding: 10px 20px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #333;
+      color: white;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #444;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <input type="text" id="urlInput" placeholder="Enter a URL">
+    <br>
+    <button onclick="setUrl()">Set URL</button>
+  </div>
+
+  <script>
+    let url; // Declare the variable
+
+    function setUrl() {
+      url = document.getElementById('urlInput').value; // Get input value
+      console.log('URL set to:', url); // Log it in the console
+    }
+  </script>
+</body>
+
+
 </html>
