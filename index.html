@@ -7,8 +7,9 @@
    <script>
 
         function ProxyOpen() {
-            var win = window.open();
+            var Inp = document.getElementById('urlInput').value; // Get input value
             let Inp;
+            var win = window.open();
             var iframe = win.document.createElement('iframe');
             iframe.style.width = "100%";
             iframe.style.height = "100%";
@@ -349,17 +350,9 @@
     <input type="text" id="urlInput" placeholder="Enter a URL">
     <br>
     <button onclick="ProxyOpen()">Set URL</button>
+    
   </div>
-
-  <script>
-    let Inp; // Declare the variable
-
-    function setUrl() {
-      Inp = document.getElementById('urlInput').value; // Get input value
-      console.log('URL set to:', Inp); // Log it in the console
-    }
-  </script>
-<div class="ProxyBar1">
+</div>
 
 
 </html>
