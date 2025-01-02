@@ -7,7 +7,7 @@
    <script>
 
         function ProxyOpen() {
-            var Inp = document.getElementById('urlInput').value; // Get input value
+             Inp = document.getElementById('urlInput').value; // Get input value
             let Inp;
             var win = window.open();
             var iframe = win.document.createElement('iframe');
@@ -350,6 +350,7 @@
     <input type="text" id="urlInput" placeholder="Enter a URL">
     <br>
     <button onclick="ProxyOpen()">Set URL</button>
+    Inp = document.getElementById('urlInput').value; // Get input value
     
   </div>
 </div>
