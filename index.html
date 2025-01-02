@@ -7,14 +7,13 @@
    <script>
 
         function ProxyOpen() {
-            var win = window.open();
-            var
-            var iframe = win.document.createElement('iframe');
-            iframe.style.width = "100%";
-            iframe.style.height = "100%";
-            iframe.style.border = "none";
-            iframe.src = Inp;
-            win.document.body.appendChild(iframe);
+            var win1 = window.open();
+            var iframe1 = win.document.createElement('iframe1');
+            iframe1.style.width = "100%";
+            iframe1.style.height = "100%";
+            iframe1.style.border = "none";
+            iframe1.src = Inp;
+            win1.document.body.appendChild(iframe);
         }  
     </script>
 
@@ -352,11 +351,11 @@
   </div>
 
   <script>
-    let Imp; // Declare the variable
+    let Inp; // Declare the variable
 
     function setUrl() {
-      Imp = document.getElementById('urlInput').value; // Get input value
-      console.log('URL set to:', Imp); // Log it in the console
+      Inp = document.getElementById('urlInput').value; // Get input value
+      console.log('URL set to:', Inp); // Log it in the console
     }
   </script>
 <div class="ProxyBar1">
