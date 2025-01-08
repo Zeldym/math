@@ -1,46 +1,85 @@
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <title>Dynamic iFrame Example</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
 
-        .back-arrow {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: bold;
-            color: #007BFF;
-            background-color: transparent;
-            padding: 5px 10px;
-            border-radius: 4px;
-            transition: background-color 0.3s ease;
-        }
+      .back-arrow {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        color: #007BFF;
+        background-color: transparent;
+        padding: 5px 10px;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+      }
 
-        .back-arrow:hover {
-            background-color: #f0f0f0;
-            color: #0056b3;
-        }
+      .back-arrow:hover {
+        background-color: #f0f0f0;
+        color: #0056b3;
+      }
 
-        .content {
-            padding: 20px;
-            text-align: center;
-        }
+      .content {
+        padding: 20px;
+        text-align: center;
+      }
+
+      #iframe-container {
+        margin-top: 60px; /* Adds space for the back button */
+        border: 1px solid #ccc;
+        padding: 10px;
+        width: 100%;
+        height: 90vh;
+        display: none;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <a href="https://mathworksheetmaker.github.io/Division/Games.html" class="back-arrow">
-        ← Back
+      ← Back
     </a>
- 
-</body>
+    
+    <div class="content">
+      <button onclick="openFirstIframe()">Open First iFrame</button>
+      <button onclick="openSecondIframe()">Open Second iFrame</button>
+    </div>
 
-<iframe src="https://mathiscool.global.ssl.fastly.net/u/liftoff/https%253A%252F%252Fpmkk.aoo%2F" title="Games" width="100%" height="100%"></iframe>
+    <div id="iframe-container">
+      <iframe id="dynamic-iframe" src="" width="100%" height="100%" frameborder="0"></iframe>
+    </div>
+
+    <script>
+      const iframeContainer = document.getElementById('iframe-container');
+      const dynamicIframe = document.getElementById('dynamic-iframe');
+
+      function openFirstIframe() {
+        // Set the source for the first iframe
+        dynamicIframe.src = "https://mathiscool.global.ssl.fastly.net"; // First URL
+        iframeContainer.style.display = "block"; // Show the iframe container
+      }
+
+      function openSecondIframe() {
+        // Close the first iframe
+        dynamicIframe.src = "https://mathiscool.global.ssl.fastly.net"; // Clear the src to "close" the iframe
+        iframeContainer.style.display = "none";
+
+        // Open the second iframe after a brief delay
+        setTimeout(() => {
+          dynamicIframe.src = "https://mathiscool.global.ssl.fastly.net/u/liftoff/https%253A%252F%252Fpmkk.aoo%2F"; // Second URL
+          iframeContainer.style.display = "block"; // Show the iframe container again
+        }, 0060); // Delay in milliseconds
+      }
+    </script>
+  </body>
 </html>
