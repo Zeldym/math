@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic iFrame Example</title>
+    <title>Automatic iFrame Transition</title>
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -30,18 +30,13 @@
         color: #0056b3;
       }
 
-      .content {
-        padding: 20px;
-        text-align: center;
-      }
-
       #iframe-container {
         margin-top: 60px; /* Adds space for the back button */
         border: 1px solid #ccc;
         padding: 10px;
         width: 100%;
         height: 90vh;
-        display: none;
+        display: block; /* Always display the iframe container */
       }
     </style>
   </head>
@@ -49,37 +44,27 @@
     <a href="https://mathworksheetmaker.github.io/Division/Games.html" class="back-arrow">
       ← Back
     </a>
-    
-    <div class="content">
-      <button onclick="openFirstIframe()">Open First iFrame</button>
-      <button onclick="openSecondIframe()">Open Second iFrame</button>
-    </div>
 
     <div id="iframe-container">
       <iframe id="dynamic-iframe" src="" width="100%" height="100%" frameborder="0"></iframe>
     </div>
 
     <script>
-      const iframeContainer = document.getElementById('iframe-container');
       const dynamicIframe = document.getElementById('dynamic-iframe');
 
-      function openFirstIframe() {
-        // Set the source for the first iframe
+      function startTransition() {
+        // Open the first iframe
         dynamicIframe.src = "https://mathiscool.global.ssl.fastly.net"; // First URL
-        iframeContainer.style.display = "block"; // Show the iframe container
-      }
 
-      function openSecondIframe() {
-        // Close the first iframe
-        dynamicIframe.src = "https://mathiscool.global.ssl.fastly.net"; // Clear the src to "close" the iframe
-        iframeContainer.style.display = "none";
-
-        // Open the second iframe after a brief delay
+        // After a delay, switch to the second iframe
         setTimeout(() => {
           dynamicIframe.src = "https://mathiscool.global.ssl.fastly.net/u/liftoff/https%253A%252F%252Fpmkk.aoo%2F"; // Second URL
-          iframeContainer.style.display = "block"; // Show the iframe container again
-        }, 0060); // Delay in milliseconds
+        }, 0020); // Delay in milliseconds (5 seconds in this case)
       }
+
+      // Start the iframe transition when the page loads
+      window.onload = startTransition;
     </script>
   </body>
 </html>
+
