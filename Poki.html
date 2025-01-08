@@ -4,36 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-      }
+     body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-      .back-arrow {
+        .back-arrow {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            color: #007BFF;
+            background-color: transparent;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-arrow:hover {
+            background-color: #f0f0f0;
+            color: #0056b3;
+        }
+
+     #iframe-container {
         position: absolute;
-        top: 10px;
-        left: 10px;
-        text-decoration: none;
-        font-size: 18px;
-        font-weight: bold;
-        color: #007BFF;
-        background-color: transparent;
-        padding: 5px 10px;
-        border-radius: 4px;
-        transition: background-color 0.3s ease;
-      }
-
-      .back-arrow:hover {
-        background-color: #f0f0f0;
-        color: #0056b3;
-      }
-
-      #iframe-container {
-        padding: 10px;
+        top: 0;
+        left: 0;
         width: 100%;
         height: 100%;
-        display: block; /* Always display the iframe container */
+      }
+
+      iframe {
+        width: 100%;
+        height: 100%;
+        border: none; /* No borders for the iframe */
       }
     </style>
   </head>
